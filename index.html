@@ -6,6 +6,9 @@
         <title>IS 445 Assignment3.</title>
     </head>
     <body>
+        <p>
+        guangyuan-liu-Assignment3
+        </p>
         <div id="myviz">
         </div>
     </body>
@@ -14,7 +17,7 @@
             "width": 800,
             "height": 600,
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            "description": "A scatterplot showing horsepower and miles per gallons that opens a Google search for the car that you click on.",
+            "description": "This diagram show the relationship between Square Footage and Total Floors",
             "data": {"url": "building_inventory.csv"},
             "mark": "circle",
             "encoding": {
@@ -22,7 +25,6 @@
                 "y": {"field": "Total Floors", "type": "quantitative"},
                 "color": {"field": "Bldg Status", "type": "nominal"},
                 "tooltip": {"field": "Agency Name", "type": "nominal"},
-                "href": {"field": "url", "type": "nominal"}
             }
         };
         vegaEmbed('#myviz', mySpec);
